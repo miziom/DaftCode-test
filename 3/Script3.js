@@ -1,8 +1,8 @@
 function search() {
     var textField, filter, myTable, tr, td, i, txtValue;
-    textField = document.getElementById("textField");
+    textField = document.getElementsByClassName("textField")[0];
     filter = textField.value.toUpperCase();
-    myTable = document.getElementById("searchTable");
+    myTable = document.getElementsByClassName("searchTable")[0];
     tr = myTable.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {

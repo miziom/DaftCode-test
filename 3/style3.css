@@ -1,4 +1,4 @@
-﻿#textField {
+﻿.textField {
     background-position: 10px 12px;
     background-repeat: no-repeat;
     width: 50%;
@@ -8,33 +8,32 @@
     margin-bottom: 12px;
 }
 
-#submitBtn {
+.submitBtn {
     background: #5A75BF;
     padding: 1em 2em;
     color: #ffffff;
     border: 0;
 }
 
-#submitBtn:hover {
+.submitBtn:hover {
     background: #3C4E80;
 }
-
-#searchTable {
+.searchTable {
     border-collapse: collapse; 
     width: 100%; 
     border: 1px solid #ddd; 
     font-size: 18px; 
 }
 
-    #searchTable th, #searchTable td {
+    .searchTable th, .searchTable td {
         text-align: left; 
         padding: 12px;
     }
 
-    #searchTable tr {
+    .searchTable tr {
         border-bottom: 1px solid #ddd;
     }
 
-        #searchTable tr.header, #searchTable tr:hover {
+        .searchTable tr.header, .searchTable tr:hover {
             background-color: #f4f4f4;
         }

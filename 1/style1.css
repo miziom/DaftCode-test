@@ -9,49 +9,49 @@ body{
     flex-direction: column;
 }
 
-header, footer {
+.header, .footer {
     background-color: #1A1C22;
     height: 100px;
     width: 100%;
     flex: none;
 }
 
-header {
+.header {
     margin-bottom: 15px;
 }
 
-main {
+.main {
     min-height: 400px;
     width: 100%;
     flex: auto;
 }
 
-aside {
+.sideBar {
     background-color: #6C757D;
 }
 
-content {
+.content {
     background-color: #343A40;
 }
 
-footer {
+.footer {
     margin-top: 15px;
 }
 
 @media only screen and (max-width: 599px){
 
-    main {
+    .main {
         flex-direction: column;
     }
 
-    aside {
+    .sideBar {
         height: calc(50% - 7.5px);
         width: 100%;
         flex: auto;
         margin-bottom: 15px;
     }
 
-    section {
+    .section {
         height: calc(50% - 7.5px);
         width: 100%;
         flex: auto;
@@ -64,18 +64,18 @@ footer {
 
 @media only screen and (min-width: 600px){
 
-    main{
+    .main{
         flex-direction: column;
     }
 
-    aside{
+    .sideBar {
         height: calc(50% - 7.5px);
         width: 100%;
         flex: auto;
         margin-bottom: 15px;
     }
 
-    section {
+    .section {
         height: calc(50% - 7.5px);
         width: 100%;
         flex: auto;
@@ -88,13 +88,13 @@ footer {
 
 @media only screen and (min-width: 900px) {
 
-    aside {
+    .sideBar {
         height: 100%;
         width: 400px;
         float: left;
     }
 
-    section {
+    .section {
         height: 100%;
         width: calc(100% - 415px);
         margin-left: 15px;
@@ -109,13 +109,13 @@ footer {
 
 @media only screen and (min-width: 1200px){
 
-    aside{
+    .sideBar {
         height: 100%;
         width: 400px;
         float: left;
     }
 
-    section {
+    .section {
         height: 100%;
         width: calc(100% - 415px);
         margin-left: 15px;
