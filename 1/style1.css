@@ -1,0 +1,130 @@
+﻿html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #1A1C22;
+    height: 100px;
+    width: 100%;
+    flex: none;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+main {
+    min-height: 400px;
+    width: 100%;
+    flex: auto;
+}
+
+aside {
+    background-color: #6C757D;
+}
+
+content {
+    background-color: #343A40;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 599px){
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        height: calc(50% - 7.5px);
+        width: 100%;
+        flex: auto;
+        margin-bottom: 15px;
+    }
+
+    section {
+        height: calc(50% - 7.5px);
+        width: 100%;
+        flex: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+
+    main{
+        flex-direction: column;
+    }
+
+    aside{
+        height: calc(50% - 7.5px);
+        width: 100%;
+        flex: auto;
+        margin-bottom: 15px;
+    }
+
+    section {
+        height: calc(50% - 7.5px);
+        width: 100%;
+        flex: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    aside {
+        height: 100%;
+        width: 400px;
+        float: left;
+    }
+
+    section {
+        height: 100%;
+        width: calc(100% - 415px);
+        margin-left: 15px;
+        float: left;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    aside{
+        height: 100%;
+        width: 400px;
+        float: left;
+    }
+
+    section {
+        height: 100%;
+        width: calc(100% - 415px);
+        margin-left: 15px;
+        float: left;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+}
