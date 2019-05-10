@@ -1,9 +1,9 @@
 function search() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("textField");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("searchTable");
-    tr = table.getElementsByTagName("tr");
+    var textField, filter, myTable, tr, td, i, txtValue;
+    textField = document.getElementById("textField");
+    filter = textField.value.toUpperCase();
+    myTable = document.getElementById("searchTable");
+    tr = myTable.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
