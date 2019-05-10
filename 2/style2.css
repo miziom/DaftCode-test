@@ -1,0 +1,44 @@
+﻿body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.button {
+    background: #5A75BF;
+    padding: 1em 2em;
+    color: #ffffff;
+    border: 0;
+}
+
+    .button:hover {
+        background: #3C4E80;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 25% auto;
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
